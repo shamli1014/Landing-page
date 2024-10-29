@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Headset Launch</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+            color: white;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1em;
+            text-align: left;
+        }
+        .features li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        .features li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+        }
+        .testimonials blockquote {
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            border-left: 5px solid #ccc;
+            padding-left: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+            border-color: black;
+            margin: 10px;
+        }
+        .faq h3 {
+            margin: 20px 0 10px;
+            font-size: 1.5em;
+        }
+        .signup {
+            background: #222;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .signup input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .signup button {
+            padding: 10px 20px;
+            background: #fff;
+            color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .signup button:hover {
+            background: #e2e2e2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Introducing the Ultimate Headset</h1>
+        <p>Experience unparalleled sound quality and comfort.</p>
+    </header>
+
+    <div class="container">
+        <section class="product">
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/7e1dc418-9c96-4248-9fb6-12123d4005da._CR0,0,1200,628_SX920_QL70_.png" alt="Ultimate Headset">
+            <h2>Ultimate Headset</h2>
+            <p>Enjoy crystal-clear audio and noise cancellation. Perfect for gaming, music, and calls.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Superior Sound Quality</li>
+                <li>Active Noise Cancellation</li>
+                <li>Optimized for Gaming</li>
+                <li>Crystal Clear Calls</li>
+                <li>Long Battery Life</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>"The best headset I’ve ever used! Amazing sound and comfort." - Alex P.</blockquote>
+            <blockquote>"Perfect for gaming! The noise cancellation is a game-changer." - Jamie L.</blockquote>
+        </section>
+
+        <section class="gallery">
+            <h2>Product Gallery</h2>
+            <div class="grid">
+                <img src="https://m.media-amazon.com/images/I/71MH3hHZIwL._AC_UL480_FMwebp_QL65_.jpg" alt="Headset Image 1">
+                <img src="https://m.media-amazon.com/images/I/51-3rfCGrdL._AC_UL480_FMwebp_QL65_.jpg" alt="Headset Image 2">
+                <img src="https://m.media-amazon.com/images/I/71XThwKQIPL._AC_UL480_FMwebp_QL65_.jpg" alt="Headset Image 3">
+                <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/52369dab-f53d-4161-ba5f-33cd95147786._CR0,0,1200,628_SX920_QL70_.jpg" alt="Headset Image 4">
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What devices are compatible?</h3>
+            <p>The headset works with PCs, consoles, and mobile devices.</p>
+            <h3>How long is the battery life?</h3>
+            <p>Up to 20 hours on a single charge.</p>
+            <h3>Is there a warranty?</h3>
+            <p>Yes, we offer a 1-year warranty on all our products.</p>
+        </section>
+
+        <section class="signup">
+            <h2>Sign Up for Updates</h2>
+            <form id="signup-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Notify Me</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message');
+
+            if (email) {
+                message.textContent = `Thank you! We'll notify you at ${email}.`;
+                message.style.color = 'green';
+                document.getElementById('email').value = ''; // Clear the input
+            } else {
+                message.textContent = 'Please enter a valid email.';
+                message.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
